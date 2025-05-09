@@ -1,0 +1,23 @@
+{
+  "name": "todos",
+  "version": "1.0.0",
+  "description": "todos app",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"No tests yet\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oiboiiii/todos.git"
+  },
+  "author": "sophie",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oiboiiii/todos/issues"
+  },
+  "homepage": "https://github.com/oiboiiii/todos#readme",
+  "devDependencies": {
+    "electron": "^36.2.0"
+  }
+}

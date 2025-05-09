@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>todos</title>
+    <style>
+.task-text {
+  position: relative;
+  display: inline-block;
+  color: #000;
+}
+
+.task-text::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 2px;
+  width: 0%;
+  background: #888;
+  transition: width 0.4s ease-out;
+  transform: translateY(-50%);
+  pointer-events: none;
+}
+
+.task-text.done {
+  color: #888;
+}
+
+.task-text.done::after {
+  width: 100%;
+}
+    </style>
+</head>
+<body>
+    <h1>todos</h1>
+
+    <input id="task-input" type="text" placeholder="what plans?"/>
+    <button id="add-btn">ok</button>
+
+    <div id="task-list"></div>
+
+    <script src="renderer.js" defer></script>
+</body>
+</html>
